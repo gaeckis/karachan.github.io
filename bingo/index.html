@@ -124,18 +124,18 @@ function generuj_bingo() {
   ctx.strokeStyle="#000000";
 
   //linie pionowe
-  for (var x=1;x<5;x++) {
+  for (var x=1;x<7;x++) {
     ctx.beginPath();
-    ctx.moveTo(x*(bingo_w/5)+bmarg , 0      + bingo_m);
-    ctx.lineTo(x*(bingo_w/5)+bmarg, bingo_h + bingo_m);  
+    ctx.moveTo(x*(bingo_w/7)+bmarg , 0      + bingo_m);
+    ctx.lineTo(x*(bingo_w/7)+bmarg, bingo_h + bingo_m);  
     ctx.stroke();
   }
 
   //linie poziome
-  for (var y=1;y<5;y++) {
+  for (var y=1;y<7;y++) {
     ctx.beginPath();
-    ctx.moveTo(0      +bmarg, y*(bingo_h/5) +bingo_m);
-    ctx.lineTo(bingo_w+bmarg, y*(bingo_h/5) +bingo_m);  
+    ctx.moveTo(0      +bmarg, y*(bingo_h/7) +bingo_m);
+    ctx.lineTo(bingo_w+bmarg, y*(bingo_h/7) +bingo_m);  
     ctx.stroke();
   }
   
